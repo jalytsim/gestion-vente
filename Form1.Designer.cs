@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
             this.pdf = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,8 +43,37 @@
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(12, 12);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Ajout";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // pdf
+            // 
+            this.pdf.Location = new System.Drawing.Point(104, 12);
+            this.pdf.Name = "pdf";
+            this.pdf.Size = new System.Drawing.Size(75, 23);
+            this.pdf.TabIndex = 3;
+            this.pdf.Text = "Generer PDF";
+            this.pdf.UseVisualStyleBackColor = true;
+            this.pdf.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Location = new System.Drawing.Point(12, 41);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1004, 397);
+            this.panel1.TabIndex = 4;
             // 
             // dataGridView1
             // 
@@ -62,36 +92,12 @@
             this.Column11,
             this.Column5,
             this.Column6});
-            this.dataGridView1.Location = new System.Drawing.Point(16, 85);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(27, 18);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(1355, 319);
-            this.dataGridView1.TabIndex = 1;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(16, 15);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 28);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Ajout";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // pdf
-            // 
-            this.pdf.Location = new System.Drawing.Point(139, 15);
-            this.pdf.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pdf.Name = "pdf";
-            this.pdf.Size = new System.Drawing.Size(100, 28);
-            this.pdf.TabIndex = 3;
-            this.pdf.Text = "Generer PDF";
-            this.pdf.UseVisualStyleBackColor = true;
-            this.pdf.Click += new System.EventHandler(this.button1_Click);
+            this.dataGridView1.Size = new System.Drawing.Size(948, 364);
+            this.dataGridView1.TabIndex = 2;
             // 
             // Column1
             // 
@@ -198,25 +204,26 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1504, 554);
+            this.ClientSize = new System.Drawing.Size(1028, 450);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pdf);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button pdf;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
