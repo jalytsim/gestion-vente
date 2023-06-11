@@ -9,8 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using MySqlX.XDevAPI;
-using Aspose.Pdf;
-using Aspose.Pdf.Text;
+
 
 namespace geston_vente
 {
@@ -120,5 +119,10 @@ Console.WriteLine("Le fichier PDF a été généré avec succès.");
 // Attendre une entrée utilisateur pour terminer le programme
 Console.ReadLine();
  }
+
+        private void afficherCont_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

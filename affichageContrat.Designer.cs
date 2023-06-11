@@ -88,7 +88,6 @@
             this.label1.Size = new System.Drawing.Size(126, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Numero Contrat :";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label3
             // 
@@ -179,7 +178,6 @@
             this.label8.Size = new System.Drawing.Size(65, 19);
             this.label8.TabIndex = 6;
             this.label8.Text = "C . I . N :";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // groupBox3
             // 
@@ -200,7 +198,6 @@
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "TERRAIN";
-            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter_1);
             // 
             // label12
             // 
@@ -349,7 +346,6 @@
             this.ref_ven.Size = new System.Drawing.Size(75, 18);
             this.ref_ven.TabIndex = 17;
             this.ref_ven.Text = "VE000001";
-            this.ref_ven.Click += new System.EventHandler(this.ref__Click);
             // 
             // label17
             // 
@@ -540,7 +536,6 @@
             this.np.Size = new System.Drawing.Size(16, 18);
             this.np.TabIndex = 21;
             this.np.Text = "2";
-            this.np.Click += new System.EventHandler(this.label26_Click);
             // 
             // label27
             // 
