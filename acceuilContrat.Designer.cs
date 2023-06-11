@@ -1,6 +1,6 @@
 ﻿namespace geston_vente
 {
-    partial class Form1
+    partial class acceuilContrat
     {
         /// <summary>
         /// Variable nécessaire au concepteur.

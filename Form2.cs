@@ -12,12 +12,12 @@ namespace geston_vente
 {
     public partial class Form2 : Form
     {
-        private readonly Form1 _parent;
+        private readonly acceuilContrat _parent;
         public string num_contUI, ref_terUI, ref_cliUI, ref_venUI, condUI, penUI, debUI, finUI;
         public int nb_pUI;
        /* public DateTime debUI;
         public DateTime finUI;*/
-        public Form2(Form1 parent)
+        public Form2(acceuilContrat parent)
         {
              InitializeComponent();
             _parent = parent;
