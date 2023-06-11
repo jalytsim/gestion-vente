@@ -1,16 +1,16 @@
 ﻿namespace geston_vente
 {
-    partial class acceuilContrat
+    partial class tableContrats
     {
         /// <summary>
-        /// Variable nécessaire au concepteur.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Nettoyage des ressources utilisées.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si les ressources managées doivent être supprimées ; sinon, false.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,21 +20,14 @@
             base.Dispose(disposing);
         }
 
-        #region Code généré par le Concepteur Windows Form
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Méthode requise pour la prise en charge du concepteur - ne modifiez pas
-        /// le contenu de cette méthode avec l'éditeur de code.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.back = new System.Windows.Forms.Button();
-            this.show = new System.Windows.Forms.Button();
-            this.search = new System.Windows.Forms.TextBox();
-            this.pdfCont = new System.Windows.Forms.Button();
-            this.addCont = new System.Windows.Forms.Button();
-            this.showContrat = new System.Windows.Forms.Panel();
             this.DataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,84 +40,8 @@
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.panel1.SuspendLayout();
-            this.showContrat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.back);
-            this.panel1.Controls.Add(this.show);
-            this.panel1.Controls.Add(this.search);
-            this.panel1.Controls.Add(this.pdfCont);
-            this.panel1.Controls.Add(this.addCont);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1028, 52);
-            this.panel1.TabIndex = 2;
-            // 
-            // back
-            // 
-            this.back.Location = new System.Drawing.Point(941, 15);
-            this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(75, 23);
-            this.back.TabIndex = 26;
-            this.back.Text = "Retour";
-            this.back.UseVisualStyleBackColor = true;
-            this.back.Click += new System.EventHandler(this.back_Click);
-            // 
-            // show
-            // 
-            this.show.Location = new System.Drawing.Point(860, 15);
-            this.show.Name = "show";
-            this.show.Size = new System.Drawing.Size(75, 23);
-            this.show.TabIndex = 7;
-            this.show.Text = "afficher";
-            this.show.UseVisualStyleBackColor = true;
-            this.show.Click += new System.EventHandler(this.show_Click);
-            // 
-            // search
-            // 
-            this.search.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.search.Location = new System.Drawing.Point(427, 18);
-            this.search.Name = "search";
-            this.search.Size = new System.Drawing.Size(427, 20);
-            this.search.TabIndex = 6;
-            this.search.Text = "Rechercher";
-            this.search.TextChanged += new System.EventHandler(this.search_TextChanged);
-            // 
-            // pdfCont
-            // 
-            this.pdfCont.Location = new System.Drawing.Point(93, 12);
-            this.pdfCont.Name = "pdfCont";
-            this.pdfCont.Size = new System.Drawing.Size(75, 23);
-            this.pdfCont.TabIndex = 5;
-            this.pdfCont.Text = "Generer PDF";
-            this.pdfCont.UseVisualStyleBackColor = true;
-            this.pdfCont.Click += new System.EventHandler(this.pdfCont_Click);
-            // 
-            // addCont
-            // 
-            this.addCont.Location = new System.Drawing.Point(12, 12);
-            this.addCont.Name = "addCont";
-            this.addCont.Size = new System.Drawing.Size(75, 23);
-            this.addCont.TabIndex = 4;
-            this.addCont.Text = "Ajout";
-            this.addCont.UseMnemonic = false;
-            this.addCont.UseVisualStyleBackColor = true;
-            this.addCont.Click += new System.EventHandler(this.addCont_Click);
-            // 
-            // showContrat
-            // 
-            this.showContrat.Controls.Add(this.DataGridView1);
-            this.showContrat.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.showContrat.Location = new System.Drawing.Point(0, 52);
-            this.showContrat.Name = "showContrat";
-            this.showContrat.Size = new System.Drawing.Size(1028, 398);
-            this.showContrat.TabIndex = 3;
             // 
             // DataGridView1
             // 
@@ -143,12 +60,12 @@
             this.Column11,
             this.Column5,
             this.Column6});
-            this.DataGridView1.Location = new System.Drawing.Point(12, 14);
+            this.DataGridView1.Location = new System.Drawing.Point(12, 12);
             this.DataGridView1.Name = "DataGridView1";
             this.DataGridView1.ReadOnly = true;
             this.DataGridView1.RowHeadersWidth = 51;
-            this.DataGridView1.Size = new System.Drawing.Size(1004, 370);
-            this.DataGridView1.TabIndex = 5;
+            this.DataGridView1.Size = new System.Drawing.Size(1028, 408);
+            this.DataGridView1.TabIndex = 6;
             // 
             // Column1
             // 
@@ -253,19 +170,16 @@
             this.Column6.UseColumnTextForButtonValue = true;
             this.Column6.Width = 125;
             // 
-            // acceuilContrat
+            // tableContrats
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1028, 450);
-            this.Controls.Add(this.showContrat);
-            this.Controls.Add(this.panel1);
-            this.Name = "acceuilContrat";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.showContrat.ResumeLayout(false);
+            this.ClientSize = new System.Drawing.Size(1052, 450);
+            this.Controls.Add(this.DataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "tableContrats";
+            this.Text = "tableContrats";
+            this.Load += new System.EventHandler(this.tableContrats_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -273,13 +187,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button show;
-        private System.Windows.Forms.TextBox search;
-        private System.Windows.Forms.Button pdfCont;
-        private System.Windows.Forms.Button addCont;
-        private System.Windows.Forms.Panel showContrat;
-        private System.Windows.Forms.DataGridView DataGridView1;
+        public System.Windows.Forms.DataGridView DataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -291,7 +199,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
         private System.Windows.Forms.DataGridViewButtonColumn Column5;
         private System.Windows.Forms.DataGridViewButtonColumn Column6;
-        private System.Windows.Forms.Button back;
     }
 }
-

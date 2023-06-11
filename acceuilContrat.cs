@@ -25,7 +25,7 @@ namespace geston_vente
 
     public partial class acceuilContrat : Form
     {
-
+        public static Form active;
 
         ajout_modContrats fenetre;
         public acceuilContrat()
@@ -38,13 +38,6 @@ namespace geston_vente
             DbConnexion.Search("SELECT num_cont,ref_ter,ref_cli,ref_ven,conditions,nb_paie,deb,fin,penalite FROM contrats", DataGridView1);
         }
         /*MySqlConnection connexion = new MySqlConnection("Server=localhost;Database=gestionter;Uid=root;Pwd=");*/
-
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            fenetre.effacer();
-            fenetre.ShowDialog();
-        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -84,56 +77,53 @@ namespace geston_vente
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            GeneratePdf();
-        }
         public void GeneratePdf()
         {
             // Declare the file path variable
             string filePath = string.Empty;
 
-            // Create a new PDF document
-            Document document = new Document();
-
             try
             {
-                // Open the PDF document for preview
+                // Open the save file dialog to choose the file path
                 SaveFileDialog saveFileDialog = new SaveFileDialog();
                 saveFileDialog.Filter = "Fichier PDF|*.pdf";
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    filePath = "test.pdf";
+                    filePath = saveFileDialog.FileName;
 
-                    // Create a new PDF writer
-                    PdfWriter writer = PdfWriter.GetInstance(document, new FileStream(filePath, FileMode.Create));
+                    // Create a new PDF document
+                    using (Document document = new Document())
+                    {
+                        // Create a new PDF writer
+                        using (PdfWriter writer = PdfWriter.GetInstance(document, new FileStream(filePath, FileMode.Create)))
+                        {
+                            // Open the PDF document
+                            document.Open();
 
-                    // Open the PDF document
-                    document.Open();
+                            // Add content to the PDF document
+                            AddContent(document, writer);
 
-                    // Add content to the PDF document
-                    AddContent(document);
+                            // Close the PDF document
+                            document.Close();
 
-                    // Close the PDF document
-                    document.Close();
+                            // Display a notification
+                            MessageBox.Show("PDF generated successfully!");
 
-                    // Display a notification
-                    MessageBox.Show("PDF generated successfully!");
-
-                    // Open the PDF with the default PDF application
-                    Process.Start(filePath);
+                            // Open the PDF with the default PDF application
+                            Process.Start(filePath);
+                        }
+                    }
                 }
             }
             catch (Exception ex)
             {
                 // Display an error message if an exception occurs
                 MessageBox.Show("Error generating PDF: " + ex.Message);
-                document.Close();
             }
         }
 
 
-        private void AddContent(Document document)
+        private void AddContent(Document document, PdfWriter writer)
         {
             // Create a new paragraph
             Paragraph paragraph = new Paragraph();
@@ -236,6 +226,59 @@ namespace geston_vente
             string searchQuery = search.Text;
             string query = "SELECT num_cont, ref_ter, ref_cli, ref_ven, conditions, nb_paie, deb, fin, penalite FROM contrats WHERE num_cont LIKE '%" + searchQuery + "%'";
             DbConnexion.Search(query, DataGridView1);
+        }
+
+        private void show_Click(object sender, EventArgs e)
+        {
+            affichageContrat form2 = new affichageContrat();
+
+            // Configure the form properties
+            form2.TopLevel = false;
+            form2.FormBorderStyle = FormBorderStyle.None;
+            form2.Dock = DockStyle.Fill;
+            form2.AutoSize = true;
+            form2.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+
+            // Add the form to the panel's controls
+            showContrat.Controls.Clear(); // Clear existing controls in the panel
+            showContrat.Controls.Add(form2);
+
+            // Show the form
+            form2.Visible = true;
+        }
+
+        private void back_Click(object sender, EventArgs e)
+        {
+            tableContrats form2 = new tableContrats();
+
+            // Configure the form properties
+            form2.TopLevel = false;
+            form2.FormBorderStyle = FormBorderStyle.None;
+            form2.Dock = DockStyle.Fill;
+            form2.AutoSize = true;
+            form2.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+
+            // Add the form to the panel's controls
+            showContrat.Controls.Clear(); // Clear existing controls in the panel
+            showContrat.Controls.Add(form2);
+
+            // Show the form
+            form2.Visible = true;
+
+            // Load the data into the DataGridView
+            form2.LoadData();
+        }
+
+
+        private void addCont_Click(object sender, EventArgs e)
+        {
+            fenetre.effacer();
+            fenetre.ShowDialog();
+        }
+
+        private void pdfCont_Click(object sender, EventArgs e)
+        {
+            GeneratePdf();
         }
     }
 }

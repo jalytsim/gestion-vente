@@ -31,22 +31,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.ref_cli = new System.Windows.Forms.Label();
-            this.nom_cli = new System.Windows.Forms.Label();
-            this.prenom_cli = new System.Windows.Forms.Label();
-            this.mail_cli = new System.Windows.Forms.Label();
             this.cin_cli = new System.Windows.Forms.Label();
+            this.mail_cli = new System.Windows.Forms.Label();
+            this.prenom_cli = new System.Windows.Forms.Label();
+            this.nom_cli = new System.Windows.Forms.Label();
+            this.ref_cli = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.cin_ven = new System.Windows.Forms.Label();
             this.mail_ven = new System.Windows.Forms.Label();
             this.prenom_ven = new System.Windows.Forms.Label();
@@ -57,11 +51,17 @@
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.ref_ter = new System.Windows.Forms.Label();
-            this.lieu = new System.Windows.Forms.Label();
-            this.cp = new System.Windows.Forms.Label();
-            this.sup = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.descri_ter = new System.Windows.Forms.Label();
+            this.sup = new System.Windows.Forms.Label();
+            this.cp = new System.Windows.Forms.Label();
+            this.lieu = new System.Windows.Forms.Label();
+            this.ref_ter = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -119,6 +119,95 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "CLIENT";
             // 
+            // cin_cli
+            // 
+            this.cin_cli.AutoSize = true;
+            this.cin_cli.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cin_cli.Location = new System.Drawing.Point(10, 247);
+            this.cin_cli.Name = "cin_cli";
+            this.cin_cli.Size = new System.Drawing.Size(112, 18);
+            this.cin_cli.TabIndex = 11;
+            this.cin_cli.Text = "1021013610036";
+            // 
+            // mail_cli
+            // 
+            this.mail_cli.AutoSize = true;
+            this.mail_cli.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mail_cli.Location = new System.Drawing.Point(11, 202);
+            this.mail_cli.Name = "mail_cli";
+            this.mail_cli.Size = new System.Drawing.Size(198, 18);
+            this.mail_cli.TabIndex = 10;
+            this.mail_cli.Text = "exemple82email@gmail.com";
+            // 
+            // prenom_cli
+            // 
+            this.prenom_cli.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prenom_cli.Location = new System.Drawing.Point(11, 116);
+            this.prenom_cli.Name = "prenom_cli";
+            this.prenom_cli.Size = new System.Drawing.Size(223, 57);
+            this.prenom_cli.TabIndex = 9;
+            this.prenom_cli.Text = "Prenom1 Miampy Ny FaharoanyHAHA Ampina ny Fahatelo ";
+            // 
+            // nom_cli
+            // 
+            this.nom_cli.AutoSize = true;
+            this.nom_cli.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nom_cli.Location = new System.Drawing.Point(7, 68);
+            this.nom_cli.Name = "nom_cli";
+            this.nom_cli.Size = new System.Drawing.Size(202, 18);
+            this.nom_cli.TabIndex = 8;
+            this.nom_cli.Text = "RANDRIANAMPOINIMERINA";
+            // 
+            // ref_cli
+            // 
+            this.ref_cli.AutoSize = true;
+            this.ref_cli.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ref_cli.Location = new System.Drawing.Point(134, 21);
+            this.ref_cli.Name = "ref_cli";
+            this.ref_cli.Size = new System.Drawing.Size(75, 18);
+            this.ref_cli.TabIndex = 7;
+            this.ref_cli.Text = "CL000001";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(6, 228);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(65, 19);
+            this.label8.TabIndex = 6;
+            this.label8.Text = "C . I . N :";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(9, 183);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(53, 19);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "Email :";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(8, 97);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(86, 19);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Prenom(s) :";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(6, 49);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(50, 19);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Nom :";
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.cin_ven);
@@ -138,165 +227,6 @@
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "VENDEUR";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(6, 49);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 19);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Nom :";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(8, 97);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(86, 19);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Prenom(s) :";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(9, 183);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 19);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Email :";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(6, 228);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 19);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "C . I . N :";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.descri_ter);
-            this.groupBox3.Controls.Add(this.sup);
-            this.groupBox3.Controls.Add(this.cp);
-            this.groupBox3.Controls.Add(this.lieu);
-            this.groupBox3.Controls.Add(this.ref_ter);
-            this.groupBox3.Controls.Add(this.label12);
-            this.groupBox3.Controls.Add(this.label11);
-            this.groupBox3.Controls.Add(this.label10);
-            this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(516, 161);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(272, 277);
-            this.groupBox3.TabIndex = 6;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "TERRAIN";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(6, 49);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(44, 19);
-            this.label12.TabIndex = 7;
-            this.label12.Text = "Lieu :";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(106, 49);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(105, 19);
-            this.label11.TabIndex = 6;
-            this.label11.Text = "Code Postale :";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(6, 144);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(93, 19);
-            this.label10.TabIndex = 5;
-            this.label10.Text = "Description :";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(6, 97);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(84, 19);
-            this.label9.TabIndex = 4;
-            this.label9.Text = "Superficie :";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(6, 20);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(136, 19);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Reference Terrain :";
-            // 
-            // ref_cli
-            // 
-            this.ref_cli.AutoSize = true;
-            this.ref_cli.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ref_cli.Location = new System.Drawing.Point(134, 21);
-            this.ref_cli.Name = "ref_cli";
-            this.ref_cli.Size = new System.Drawing.Size(75, 18);
-            this.ref_cli.TabIndex = 7;
-            this.ref_cli.Text = "CL000001";
-            // 
-            // nom_cli
-            // 
-            this.nom_cli.AutoSize = true;
-            this.nom_cli.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nom_cli.Location = new System.Drawing.Point(7, 68);
-            this.nom_cli.Name = "nom_cli";
-            this.nom_cli.Size = new System.Drawing.Size(202, 18);
-            this.nom_cli.TabIndex = 8;
-            this.nom_cli.Text = "RANDRIANAMPOINIMERINA";
-            // 
-            // prenom_cli
-            // 
-            this.prenom_cli.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prenom_cli.Location = new System.Drawing.Point(11, 116);
-            this.prenom_cli.Name = "prenom_cli";
-            this.prenom_cli.Size = new System.Drawing.Size(223, 57);
-            this.prenom_cli.TabIndex = 9;
-            this.prenom_cli.Text = "Prenom1 Miampy Ny FaharoanyHAHA Ampina ny Fahatelo ";
-            // 
-            // mail_cli
-            // 
-            this.mail_cli.AutoSize = true;
-            this.mail_cli.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mail_cli.Location = new System.Drawing.Point(11, 202);
-            this.mail_cli.Name = "mail_cli";
-            this.mail_cli.Size = new System.Drawing.Size(198, 18);
-            this.mail_cli.TabIndex = 10;
-            this.mail_cli.Text = "exemple82email@gmail.com";
-            // 
-            // cin_cli
-            // 
-            this.cin_cli.AutoSize = true;
-            this.cin_cli.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cin_cli.Location = new System.Drawing.Point(10, 247);
-            this.cin_cli.Name = "cin_cli";
-            this.cin_cli.Size = new System.Drawing.Size(112, 18);
-            this.cin_cli.TabIndex = 11;
-            this.cin_cli.Text = "1021013610036";
             // 
             // cin_ven
             // 
@@ -397,35 +327,35 @@
             this.label23.TabIndex = 12;
             this.label23.Text = "Reference Vendeur :";
             // 
-            // ref_ter
+            // groupBox3
             // 
-            this.ref_ter.AutoSize = true;
-            this.ref_ter.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ref_ter.Location = new System.Drawing.Point(148, 21);
-            this.ref_ter.Name = "ref_ter";
-            this.ref_ter.Size = new System.Drawing.Size(75, 18);
-            this.ref_ter.TabIndex = 8;
-            this.ref_ter.Text = "TE000001";
+            this.groupBox3.Controls.Add(this.descri_ter);
+            this.groupBox3.Controls.Add(this.sup);
+            this.groupBox3.Controls.Add(this.cp);
+            this.groupBox3.Controls.Add(this.lieu);
+            this.groupBox3.Controls.Add(this.ref_ter);
+            this.groupBox3.Controls.Add(this.label12);
+            this.groupBox3.Controls.Add(this.label11);
+            this.groupBox3.Controls.Add(this.label10);
+            this.groupBox3.Controls.Add(this.label9);
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(516, 161);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(272, 277);
+            this.groupBox3.TabIndex = 6;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "TERRAIN";
             // 
-            // lieu
+            // descri_ter
             // 
-            this.lieu.AutoSize = true;
-            this.lieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lieu.Location = new System.Drawing.Point(7, 67);
-            this.lieu.Name = "lieu";
-            this.lieu.Size = new System.Drawing.Size(217, 18);
-            this.lieu.TabIndex = 9;
-            this.lieu.Text = "Antananarivo , Manjakamiadana";
-            // 
-            // cp
-            // 
-            this.cp.AutoSize = true;
-            this.cp.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cp.Location = new System.Drawing.Point(217, 50);
-            this.cp.Name = "cp";
-            this.cp.Size = new System.Drawing.Size(32, 18);
-            this.cp.TabIndex = 10;
-            this.cp.Text = "303";
+            this.descri_ter.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descri_ter.Location = new System.Drawing.Point(7, 163);
+            this.descri_ter.Name = "descri_ter";
+            this.descri_ter.Size = new System.Drawing.Size(259, 103);
+            this.descri_ter.TabIndex = 12;
+            this.descri_ter.Text = "ici se trouve les derciptions du terrai comme l\'avoir de l\'acces voiture ou l\'arr" +
+    "ivee d\'eau et electricité";
             // 
             // sup
             // 
@@ -437,15 +367,85 @@
             this.sup.TabIndex = 11;
             this.sup.Text = "100.000 km2";
             // 
-            // descri_ter
+            // cp
             // 
-            this.descri_ter.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.descri_ter.Location = new System.Drawing.Point(7, 163);
-            this.descri_ter.Name = "descri_ter";
-            this.descri_ter.Size = new System.Drawing.Size(259, 103);
-            this.descri_ter.TabIndex = 12;
-            this.descri_ter.Text = "ici se trouve les derciptions du terrai comme l\'avoir de l\'acces voiture ou l\'arr" +
-    "ivee d\'eau et electricité";
+            this.cp.AutoSize = true;
+            this.cp.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cp.Location = new System.Drawing.Point(217, 50);
+            this.cp.Name = "cp";
+            this.cp.Size = new System.Drawing.Size(32, 18);
+            this.cp.TabIndex = 10;
+            this.cp.Text = "303";
+            // 
+            // lieu
+            // 
+            this.lieu.AutoSize = true;
+            this.lieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lieu.Location = new System.Drawing.Point(7, 67);
+            this.lieu.Name = "lieu";
+            this.lieu.Size = new System.Drawing.Size(217, 18);
+            this.lieu.TabIndex = 9;
+            this.lieu.Text = "Antananarivo , Manjakamiadana";
+            // 
+            // ref_ter
+            // 
+            this.ref_ter.AutoSize = true;
+            this.ref_ter.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ref_ter.Location = new System.Drawing.Point(148, 21);
+            this.ref_ter.Name = "ref_ter";
+            this.ref_ter.Size = new System.Drawing.Size(75, 18);
+            this.ref_ter.TabIndex = 8;
+            this.ref_ter.Text = "TE000001";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(6, 49);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(44, 19);
+            this.label12.TabIndex = 7;
+            this.label12.Text = "Lieu :";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(106, 49);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(105, 19);
+            this.label11.TabIndex = 6;
+            this.label11.Text = "Code Postale :";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(6, 144);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(93, 19);
+            this.label10.TabIndex = 5;
+            this.label10.Text = "Description :";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(6, 97);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(84, 19);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "Superficie :";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(6, 20);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(136, 19);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Reference Terrain :";
             // 
             // label2
             // 
@@ -571,7 +571,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(801, 453);
             this.Controls.Add(this.num_cont);
             this.Controls.Add(this.cond);
             this.Controls.Add(this.label27);
