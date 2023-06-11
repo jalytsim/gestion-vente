@@ -10,14 +10,14 @@ using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 namespace geston_vente
 {
-    public partial class Form2 : Form
+    public partial class ajout_modContrats : Form
     {
         private readonly acceuilContrat _parent;
         public string num_contUI, ref_terUI, ref_cliUI, ref_venUI, condUI, penUI, debUI, finUI;
         public int nb_pUI;
        /* public DateTime debUI;
         public DateTime finUI;*/
-        public Form2(acceuilContrat parent)
+        public ajout_modContrats(acceuilContrat parent)
         {
              InitializeComponent();
             _parent = parent;
@@ -26,7 +26,7 @@ namespace geston_vente
         public void modifierContrats()
         {
             button1.Text = "Modifier";
-            num_cont.Text = num_contUI.ToString();
+            num_contUIlab.Text = num_contUI.ToString();
             ref_ter.Text = ref_terUI;
             ref_cli.Text = ref_cliUI;
             ref_ven.Text = ref_venUI;
@@ -49,15 +49,17 @@ namespace geston_vente
 
         public void effacer()
         {
-           ref_ter.Text = ref_cli.Text = string.Empty;
+         cond.Text = fin.Text = deb.Text = pen.Text = num_contUIlab.Text = ref_ven.Text = ref_ter.Text = ref_cli.Text = string.Empty;
         }
         static string GenererNumContrat(int length)
         {
-            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            const string chars = "0123456789";
             StringBuilder sb = new StringBuilder();
             Random random = new Random();
 
-            for (int i = 0; i < length; i++)
+            sb.Append("CO"); // Ajouter les deux premières lettres "CO"
+
+            for (int i = 2; i < length; i++) // Commencer à l'index 2 pour éviter de générer des lettres supplémentaires
             {
                 int index = random.Next(chars.Length);
                 sb.Append(chars[index]);
@@ -70,7 +72,7 @@ namespace geston_vente
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int text2 = int.Parse(ref_ter.Text.Trim());
+            /*int text2 = int.Parse(ref_ter.Text.Trim());
             if(ref_cli.Text.Trim().Length < 3)
             {
                 MessageBox.Show("Observation vide");
@@ -80,11 +82,11 @@ namespace geston_vente
             {
                 MessageBox.Show("Montant vide");
                 return;
-            }
+            }*/
 
             if (button1.Text == "Enregistrer")
             {
-                string num_cont = GenererNumContrat(10);
+                string num_cont = GenererNumContrat(8);
                 contrats contrat = new contrats(
                     num_cont,
                     ref_ter.Text,
@@ -102,7 +104,7 @@ namespace geston_vente
 
             if (button1.Text == "Modifier")
             {
-                string num_cont = pen.Text;
+                string num_cont = num_contUIlab.Text;
                 contrats p = new contrats(
                     num_cont,
                     ref_ter.Text,
@@ -115,7 +117,7 @@ namespace geston_vente
                     pen.Text
                     );
                     DbConnexion.modifierContrats(p,num_contUI);
-                effacer();
+                
             }
             _parent.afficher();
             

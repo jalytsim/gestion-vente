@@ -29,7 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.pdf = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.DataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,34 +44,58 @@
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.afficherCont = new System.Windows.Forms.Button();
             this.search = new System.Windows.Forms.TextBox();
-            this.pdf = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.show = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Controls.Add(this.show);
+            this.panel1.Controls.Add(this.search);
+            this.panel1.Controls.Add(this.pdf);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1009, 517);
-            this.panel1.TabIndex = 4;
+            this.panel1.Size = new System.Drawing.Size(1028, 52);
+            this.panel1.TabIndex = 2;
             // 
-            // dataGridView1
+            // pdf
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.pdf.Location = new System.Drawing.Point(93, 12);
+            this.pdf.Name = "pdf";
+            this.pdf.Size = new System.Drawing.Size(75, 23);
+            this.pdf.TabIndex = 5;
+            this.pdf.Text = "Generer PDF";
+            this.pdf.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(12, 12);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Ajout";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.DataGridView1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 52);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1028, 398);
+            this.panel2.TabIndex = 3;
+            // 
+            // DataGridView1
+            // 
+            this.DataGridView1.AllowUserToAddRows = false;
+            this.DataGridView1.AllowUserToDeleteRows = false;
+            this.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
@@ -80,12 +107,12 @@
             this.Column11,
             this.Column5,
             this.Column6});
-            this.dataGridView1.Location = new System.Drawing.Point(27, 71);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(953, 431);
-            this.dataGridView1.TabIndex = 2;
+            this.DataGridView1.Location = new System.Drawing.Point(12, 28);
+            this.DataGridView1.Name = "DataGridView1";
+            this.DataGridView1.ReadOnly = true;
+            this.DataGridView1.RowHeadersWidth = 51;
+            this.DataGridView1.Size = new System.Drawing.Size(1004, 370);
+            this.DataGridView1.TabIndex = 2;
             // 
             // Column1
             // 
@@ -190,85 +217,53 @@
             this.Column6.UseColumnTextForButtonValue = true;
             this.Column6.Width = 125;
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.afficherCont);
-            this.panel2.Controls.Add(this.search);
-            this.panel2.Controls.Add(this.pdf);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1009, 50);
-            this.panel2.TabIndex = 5;
-            // 
-            // afficherCont
-            // 
-            this.afficherCont.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.afficherCont.Location = new System.Drawing.Point(900, 13);
-            this.afficherCont.Name = "afficherCont";
-            this.afficherCont.Size = new System.Drawing.Size(98, 25);
-            this.afficherCont.TabIndex = 10;
-            this.afficherCont.Text = "Afficher";
-            this.afficherCont.UseVisualStyleBackColor = true;
-            this.afficherCont.Click += new System.EventHandler(this.afficherCont_Click);
-            // 
             // search
             // 
-            this.search.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.search.Location = new System.Drawing.Point(464, 17);
+            this.search.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.search.Location = new System.Drawing.Point(508, 14);
             this.search.Name = "search";
-            this.search.Size = new System.Drawing.Size(365, 20);
-            this.search.TabIndex = 9;
-            this.search.Text = "inserer ici le numero du Contrat";
+            this.search.Size = new System.Drawing.Size(427, 20);
+            this.search.TabIndex = 6;
+            this.search.Text = "Rechercher";
+            this.search.TextChanged += new System.EventHandler(this.search_TextChanged);
             // 
-            // pdf
+            // show
             // 
-            this.pdf.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pdf.Location = new System.Drawing.Point(103, 14);
-            this.pdf.Name = "pdf";
-            this.pdf.Size = new System.Drawing.Size(66, 23);
-            this.pdf.TabIndex = 8;
-            this.pdf.Text = "Generer PDF";
-            this.pdf.UseVisualStyleBackColor = true;
+            this.show.Location = new System.Drawing.Point(941, 11);
+            this.show.Name = "show";
+            this.show.Size = new System.Drawing.Size(75, 23);
+            this.show.TabIndex = 7;
+            this.show.Text = "afficher";
+            this.show.UseVisualStyleBackColor = true;
             // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(11, 14);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(66, 23);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Ajout";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // Form1
+            // acceuilContrat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1009, 517);
+            this.ClientSize = new System.Drawing.Size(1028, 450);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "Form1";
+            this.Name = "acceuilContrat";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button show;
+        private System.Windows.Forms.TextBox search;
+        private System.Windows.Forms.Button pdf;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.DataGridView DataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -280,11 +275,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
         private System.Windows.Forms.DataGridViewButtonColumn Column5;
         private System.Windows.Forms.DataGridViewButtonColumn Column6;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button afficherCont;
-        private System.Windows.Forms.TextBox search;
-        private System.Windows.Forms.Button pdf;
-        private System.Windows.Forms.Button button2;
     }
 }
 

@@ -27,11 +27,11 @@ namespace geston_vente
     {
 
 
-        Form2 fenetre;
+        ajout_modContrats fenetre;
         public acceuilContrat()
         {
             InitializeComponent();
-            fenetre = new Form2(this);
+            fenetre = new ajout_modContrats(this);
         }
         public void afficher()
         {
@@ -61,7 +61,7 @@ namespace geston_vente
                 fenetre.ref_cliUI = DataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
                 fenetre.ref_venUI = DataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
                 fenetre.condUI = DataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
-                fenetre.nb_pUI = DataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
+                fenetre.nb_pUI = (int)DataGridView1.Rows[e.RowIndex].Cells[7].Value;
                 fenetre.debUI = DataGridView1.Rows[e.RowIndex].Cells[8].Value.ToString();
                 fenetre.finUI = DataGridView1.Rows[e.RowIndex].Cells[9].Value.ToString();
                 fenetre.penUI = DataGridView1.Rows[e.RowIndex].Cells[10].Value.ToString();
@@ -103,7 +103,7 @@ namespace geston_vente
                 saveFileDialog.Filter = "Fichier PDF|*.pdf";
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    filePath = saveFileDialog.FileName;
+                    filePath = "test.pdf";
 
                     // Create a new PDF writer
                     PdfWriter writer = PdfWriter.GetInstance(document, new FileStream(filePath, FileMode.Create));
@@ -131,7 +131,6 @@ namespace geston_vente
                 document.Close();
             }
         }
-
 
 
         private void AddContent(Document document)
@@ -231,5 +230,12 @@ namespace geston_vente
             document.Add(paragraph);
         }
 
+        private void search_TextChanged(object sender, EventArgs e)
+        {
+
+            string searchQuery = search.Text;
+            string query = "SELECT num_cont, ref_ter, ref_cli, ref_ven, conditions, nb_paie, deb, fin, penalite FROM contrats WHERE num_cont LIKE '%" + searchQuery + "%'";
+            DbConnexion.Search(query, DataGridView1);
+        }
     }
 }
