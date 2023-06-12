@@ -1,21 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
-using MySqlX.XDevAPI;
 using System.Diagnostics;
 using System.IO;
-using System.Windows.Forms;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
-using System.IO;
-using Org.BouncyCastle.Ocsp;
 
 
 
@@ -37,8 +25,6 @@ namespace geston_vente
         {
             DbConnexion.Search("SELECT num_cont,ref_ter,ref_cli,ref_ven,conditions,nb_paie,deb,fin,penalite FROM contrats", DataGridView1);
         }
-        /*MySqlConnection connexion = new MySqlConnection("Server=localhost;Database=gestionter;Uid=root;Pwd=");*/
-
         private void Form1_Load(object sender, EventArgs e)
         {
             afficher();
@@ -90,7 +76,6 @@ namespace geston_vente
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     filePath = saveFileDialog.FileName;
-
                     // Create a new PDF document
                     using (Document document = new Document())
                     {
@@ -245,6 +230,7 @@ namespace geston_vente
 
             // Show the form
             form2.Visible = true;
+            form2.loadCont("CO000001");
         }
 
         private void back_Click(object sender, EventArgs e)
@@ -267,6 +253,8 @@ namespace geston_vente
 
             // Load the data into the DataGridView
             form2.LoadData();
+            form2.DataGridView1.Width = 1004;
+            form2.DataGridView1.Height = 420;
         }
 
 

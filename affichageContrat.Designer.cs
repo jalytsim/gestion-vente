@@ -74,6 +74,7 @@
             this.label27 = new System.Windows.Forms.Label();
             this.cond = new System.Windows.Forms.Label();
             this.num_cont = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -83,7 +84,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(14, 9);
+            this.label1.Location = new System.Drawing.Point(68, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(126, 19);
             this.label1.TabIndex = 0;
@@ -112,9 +113,9 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(257, 161);
+            this.groupBox1.Location = new System.Drawing.Point(342, 128);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(253, 277);
+            this.groupBox1.Size = new System.Drawing.Size(280, 277);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "CLIENT";
@@ -221,12 +222,13 @@
             this.groupBox2.Controls.Add(this.label22);
             this.groupBox2.Controls.Add(this.label23);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(12, 161);
+            this.groupBox2.Location = new System.Drawing.Point(59, 128);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(239, 277);
+            this.groupBox2.Size = new System.Drawing.Size(277, 277);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "VENDEUR";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // cin_ven
             // 
@@ -329,6 +331,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label15);
             this.groupBox3.Controls.Add(this.descri_ter);
             this.groupBox3.Controls.Add(this.sup);
             this.groupBox3.Controls.Add(this.cp);
@@ -340,9 +343,9 @@
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(516, 161);
+            this.groupBox3.Location = new System.Drawing.Point(628, 128);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(272, 277);
+            this.groupBox3.Size = new System.Drawing.Size(321, 277);
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "TERRAIN";
@@ -352,7 +355,7 @@
             this.descri_ter.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.descri_ter.Location = new System.Drawing.Point(7, 163);
             this.descri_ter.Name = "descri_ter";
-            this.descri_ter.Size = new System.Drawing.Size(259, 103);
+            this.descri_ter.Size = new System.Drawing.Size(308, 103);
             this.descri_ter.TabIndex = 12;
             this.descri_ter.Text = "ici se trouve les derciptions du terrai comme l\'avoir de l\'acces voiture ou l\'arr" +
     "ivee d\'eau et electricité";
@@ -363,15 +366,15 @@
             this.sup.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sup.Location = new System.Drawing.Point(7, 116);
             this.sup.Name = "sup";
-            this.sup.Size = new System.Drawing.Size(93, 18);
+            this.sup.Size = new System.Drawing.Size(60, 18);
             this.sup.TabIndex = 11;
-            this.sup.Text = "100.000 km2";
+            this.sup.Text = "100.000";
             // 
             // cp
             // 
             this.cp.AutoSize = true;
             this.cp.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cp.Location = new System.Drawing.Point(217, 50);
+            this.cp.Location = new System.Drawing.Point(283, 50);
             this.cp.Name = "cp";
             this.cp.Size = new System.Drawing.Size(32, 18);
             this.cp.TabIndex = 10;
@@ -411,7 +414,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(106, 49);
+            this.label11.Location = new System.Drawing.Point(172, 50);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(105, 19);
             this.label11.TabIndex = 6;
@@ -451,7 +454,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(14, 39);
+            this.label2.Location = new System.Drawing.Point(68, 28);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 19);
             this.label2.TabIndex = 7;
@@ -461,7 +464,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(491, 75);
+            this.label13.Location = new System.Drawing.Point(602, 75);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(131, 19);
             this.label13.TabIndex = 8;
@@ -471,7 +474,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(491, 9);
+            this.label14.Location = new System.Drawing.Point(602, 9);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(161, 19);
             this.label14.TabIndex = 9;
@@ -481,7 +484,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(491, 39);
+            this.label16.Location = new System.Drawing.Point(602, 39);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(151, 19);
             this.label16.TabIndex = 10;
@@ -491,7 +494,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(491, 106);
+            this.label18.Location = new System.Drawing.Point(602, 106);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(76, 19);
             this.label18.TabIndex = 11;
@@ -501,7 +504,7 @@
             // 
             this.pen.AutoSize = true;
             this.pen.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pen.Location = new System.Drawing.Point(565, 107);
+            this.pen.Location = new System.Drawing.Point(676, 107);
             this.pen.Name = "pen";
             this.pen.Size = new System.Drawing.Size(28, 18);
             this.pen.TabIndex = 18;
@@ -511,7 +514,7 @@
             // 
             this.fin.AutoSize = true;
             this.fin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fin.Location = new System.Drawing.Point(648, 76);
+            this.fin.Location = new System.Drawing.Point(759, 76);
             this.fin.Name = "fin";
             this.fin.Size = new System.Drawing.Size(82, 18);
             this.fin.TabIndex = 19;
@@ -521,7 +524,7 @@
             // 
             this.deb.AutoSize = true;
             this.deb.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deb.Location = new System.Drawing.Point(648, 39);
+            this.deb.Location = new System.Drawing.Point(759, 39);
             this.deb.Name = "deb";
             this.deb.Size = new System.Drawing.Size(82, 18);
             this.deb.TabIndex = 20;
@@ -531,7 +534,7 @@
             // 
             this.np.AutoSize = true;
             this.np.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.np.Location = new System.Drawing.Point(664, 10);
+            this.np.Location = new System.Drawing.Point(775, 10);
             this.np.Name = "np";
             this.np.Size = new System.Drawing.Size(16, 18);
             this.np.TabIndex = 21;
@@ -541,7 +544,7 @@
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(599, 107);
+            this.label27.Location = new System.Drawing.Point(710, 107);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(21, 18);
             this.label27.TabIndex = 22;
@@ -550,9 +553,9 @@
             // cond
             // 
             this.cond.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cond.Location = new System.Drawing.Point(19, 58);
+            this.cond.Location = new System.Drawing.Point(69, 58);
             this.cond.Name = "cond";
-            this.cond.Size = new System.Drawing.Size(473, 84);
+            this.cond.Size = new System.Drawing.Size(534, 67);
             this.cond.TabIndex = 23;
             this.cond.Text = "ici se ytrouve les conditions du contrats comme le respect du paiement a la date " +
     "dite a pein d\'avoir 10% de penalite pour chaque mois";
@@ -561,17 +564,27 @@
             // 
             this.num_cont.AutoSize = true;
             this.num_cont.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.num_cont.Location = new System.Drawing.Point(146, 10);
+            this.num_cont.Location = new System.Drawing.Point(203, 10);
             this.num_cont.Name = "num_cont";
             this.num_cont.Size = new System.Drawing.Size(79, 18);
             this.num_cont.TabIndex = 24;
             this.num_cont.Text = "CO000001";
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(73, 116);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(37, 18);
+            this.label15.TabIndex = 13;
+            this.label15.Text = "km2";
+            // 
             // affichageContrat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(801, 453);
+            this.ClientSize = new System.Drawing.Size(1004, 420);
             this.Controls.Add(this.num_cont);
             this.Controls.Add(this.cond);
             this.Controls.Add(this.label27);
@@ -650,5 +663,6 @@
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label cond;
         private System.Windows.Forms.Label num_cont;
+        private System.Windows.Forms.Label label15;
     }
 }

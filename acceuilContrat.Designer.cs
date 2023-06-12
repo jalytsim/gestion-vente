@@ -67,6 +67,8 @@
             // 
             // back
             // 
+            this.back.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.back.Location = new System.Drawing.Point(941, 15);
             this.back.Name = "back";
             this.back.Size = new System.Drawing.Size(75, 23);
@@ -77,6 +79,8 @@
             // 
             // show
             // 
+            this.show.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.show.Location = new System.Drawing.Point(860, 15);
             this.show.Name = "show";
             this.show.Size = new System.Drawing.Size(75, 23);
@@ -123,7 +127,7 @@
             this.showContrat.Dock = System.Windows.Forms.DockStyle.Fill;
             this.showContrat.Location = new System.Drawing.Point(0, 52);
             this.showContrat.Name = "showContrat";
-            this.showContrat.Size = new System.Drawing.Size(1028, 398);
+            this.showContrat.Size = new System.Drawing.Size(1028, 444);
             this.showContrat.TabIndex = 3;
             // 
             // DataGridView1
@@ -147,7 +151,7 @@
             this.DataGridView1.Name = "DataGridView1";
             this.DataGridView1.ReadOnly = true;
             this.DataGridView1.RowHeadersWidth = 51;
-            this.DataGridView1.Size = new System.Drawing.Size(1004, 370);
+            this.DataGridView1.Size = new System.Drawing.Size(1004, 420);
             this.DataGridView1.TabIndex = 5;
             // 
             // Column1
@@ -257,7 +261,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1028, 450);
+            this.ClientSize = new System.Drawing.Size(1028, 496);
             this.Controls.Add(this.showContrat);
             this.Controls.Add(this.panel1);
             this.Name = "acceuilContrat";
